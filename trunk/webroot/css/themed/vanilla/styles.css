@@ -1,0 +1,308 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font:  12px "Lucida Console","Trebuchet MS", Helvetica, sans-serif;
+	color:#333;
+	background:#c3b4a3 url(images/body_bg.png);	
+}
+
+a{
+	text-decoration:none;
+	outline:none;
+	color:#375168;
+}
+
+a:hover{
+	color:#f1592a;
+}
+
+a img{
+	border:none;
+}
+
+
+h2{
+	font-size:110%;
+	padding:5px 15px;
+	font-weight:normal;
+	letter-spacing:.07em;
+	text-transform:uppercase;
+	color:#fff;
+	background:#cec1b3;
+	border-bottom:1px solid #c3b4a3;
+}
+
+h3{
+	font-size:16px;
+	letter-spacing:.08em;
+	color:#375168;
+	padding-bottom:10px;
+}
+
+p{
+	margin-bottom:1em;
+}
+
+ul{
+	margin:0 0 1em 10px;
+}
+
+li{
+	padding-left:10px;
+}
+
+#container{
+	position:relative;
+	width:600px;
+	margin:0 auto;
+}
+
+#header{
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	background:#e2e8ed;
+	padding:15px;
+}
+
+#header h1 {
+background:#d6dfe6;
+}
+
+#header h1 a{
+	font-size:200%;
+}
+
+
+
+
+#navigation{
+	height:30px;
+	line-height:30px;
+	background:#e2e8ed;
+}
+
+#navigation ul{
+	display:table;
+	margin:0 auto;
+	padding:0;
+}
+
+#navigation li{
+	padding:0;
+	text-align:right;
+	list-style-type:none;
+	display:block;
+	float:left;
+	line-height:30px;
+	font-size:12px;
+}
+
+
+#navigation li a{
+	display:block;
+	float:left;
+	padding:0 12px;	
+	color:#999;
+}
+
+#navigation li a:hover{
+	color:#fff;
+	background:#c3b4a3;
+}
+
+
+#navigation li.current a{
+	color:#333;
+	background:#fff;
+}
+
+
+#content{
+	background:#fff;
+}
+
+
+
+#content li{
+	list-style-type:square;
+}
+
+
+#welcome{
+	color:#836c55;
+	font-size:260%;
+	font-weight:bold;
+	text-align:center;
+	letter-spacing:-0.03em;
+	line-height:0.9em;
+	padding:15px;
+	border-bottom:1px dotted #aaa;
+}
+
+/*
+	PROJECTS
+*/
+
+#projects .project{
+	margin-bottom:15px;
+}
+
+#last.project{
+	background:#adbcc9;
+}
+
+.project{
+	position:relative;
+	color:#385761;
+	padding:10px;
+}
+
+.image{
+	padding:10px 20px;
+	text-align:center;
+}
+
+.image img{
+	padding:10px;
+	background:#e9e3dc;
+	border-bottom:1px solid #cec1b3;	
+}
+
+.project .meta{
+	padding:10px 76px 10px 0;
+}
+
+.project a{
+	color:#0c2d39;
+}
+
+.project .meta .more{
+	width:140px;
+	height:25px;
+	text-indent:-5000px;
+	display:block;
+	position:absolute;
+	bottom:20px;
+	right:15px;
+	background:url(images/more_projects_btn.gif) no-repeat;
+}
+
+.project .thumbs {
+	padding:10px 0;
+	overflow:auto;
+}
+
+.project .thumbs .image{
+	float:left;
+	margin-right:10px;
+}
+
+/*
+	Categories
+*/
+
+#categories .category{
+	overflow:auto;
+	padding:15px ;
+	background:url(images/separator.gif) no-repeat bottom;
+}
+
+
+/*
+	Clients
+*/
+
+#clients .client{
+	padding:15px;
+}
+
+#clients .client .image{
+	float:left;
+	padding:3px;
+	background:#ffdd90;
+}
+
+#clients .more_from_client{
+	position:absolute;
+	background:#eee;	
+	bottom:10px;
+}
+
+
+#footer{
+	text-align:center;
+	font-size:11px;
+	color:#999;
+	margin-top:15px;
+	padding:15px 0;
+	background:#e2e8ed;
+}
+
+
+/*
+	PAGES
+*/
+
+#page h2{
+	font-size:150%;
+}
+
+.excerpt{
+	padding:15px;
+	font-size:150%;
+	margin-bottom:1em;
+}
+
+.body{
+	padding:15px;
+	line-height:18px;
+}
+
+/*
+	FORMS
+*/
+
+form{
+	color:#375168;
+	padding:15px;
+	background:#ede8e2;
+}
+
+label{
+	display:block;
+}
+
+input[type='hidden']{
+	display:none;
+}
+
+input, textarea{
+	display:block;
+	border:1px solid #644b36;
+	padding:3px;
+	margin:3px 0 6px 0;
+}
+
+.submit input{
+	width:75px;
+	height:25px;
+	border:none;
+	background:#375168;
+}
+
+/*
+	MISC
+*/
+
+
+a.more{
+	display:table;
+	padding:5px 10px 5px 22px;
+	color:#375168;
+	background:#e2dbd2;		
+}
+
