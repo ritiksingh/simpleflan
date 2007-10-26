@@ -1,0 +1,606 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	font: 76.5%/1.3em 'Lucida Grande', Verdana, sans-serif;
+	color: #000;
+	background: #fff url(images/body_bg.gif) repeat-y;
+}
+
+a{
+	text-decoration:none;
+	color:#069;
+	outline:none;
+}
+
+a:hover{
+	color:#012;
+}
+
+a img{
+	border:1px solid #999;
+	border-left:1px solid #ddd;
+	border-top:1px solid #ddd;	
+}
+
+a:hover img{
+	border:1px solid #036;
+}
+
+p
+{
+	line-height: 1.4em;
+	margin-bottom: 1.0em;
+}
+
+
+
+
+
+/*
+	LAYOUT
+*/
+
+#container{
+	position:relative;
+}
+
+#header{
+	position:absolute;
+}
+
+#header h1{
+	text-indent:-5000px;
+	width:180px;
+	height:60px;
+	background:url(images/logo.gif);
+}
+
+#content{
+	position:relative;	
+	padding-left:180px;
+}
+
+#footer{
+	clear:both;
+}
+
+/*
+	USER TOOL BAR
+*/
+
+#user_toolbar{
+	position:absolute;
+	right:0;
+	top:0;
+	padding:0 24px;
+	line-height:50px;
+	background:url(images/tool_bar_bg.gif) no-repeat;
+	color:#ddd;
+}
+
+#user_toolbar a{
+	color:#ff6;
+}
+
+/*
+	NAVIGATION
+*/
+
+#main_nav{
+	background:#eee url(images/main_nav_bg.png) repeat-x;
+	height:60px;
+	line-height:60px;
+	padding-left:180px;
+	overflow:hidden;
+}
+
+#main_nav li{
+	display:block;
+	float:left;
+}
+
+#main_nav a{
+	color:#82aeb7;
+	font-size:14px;;
+	display:block;
+	padding:0 12px;
+	float:left;
+	height:60px;
+	line-height:50px;
+}
+
+#main_nav a:hover{
+	color:#630;
+}
+
+
+#main_nav li:hover, #main_nav li.current+li:hover {
+	background:#d6d6d6 url(images/main_nav_bg.png) no-repeat center -60px;
+}
+
+#main_nav li.current{
+	background:#d6d6d6 url(images/main_nav_bg.png) no-repeat center -120px;
+}
+
+#main_nav li.current+li{
+	background:#d6d6d6 url(images/main_nav_bg.png) no-repeat left bottom;
+}
+
+
+
+#main_nav li.current a{
+	color:#000;
+	cursor:default;	
+}
+
+/*
+	ACTIONS
+*/
+
+
+div.actions{
+	width:180px;
+	position:absolute;
+	top:48px;
+	left:0;
+}
+
+
+div.actions ul{
+	list-style-type:none;
+}
+
+.actions  li{
+	display:block;
+}
+
+.actions  li:hover{
+	background:url(images/side_action_bg.gif) no-repeat right bottom;
+}
+
+.actions a{
+	font-size:14px;
+	line-height:30px;
+	padding:0 12px 0 36px;
+	display:block;
+/*	color:#000;*/
+	background:url(images/icons/book.png) no-repeat 15px center;
+}
+
+
+.actions a:hover{
+	color:#021018;
+}
+
+/*
+	ACTION ICONS
+*/
+
+
+a.new_project{
+	background-image:url(images/icons/page_add.png);
+}
+
+a.edit_project{
+	background-image:url(images/icons/page_edit.png);
+}
+
+a.delete_project{
+	background-image:url(images/icons/page_delete.png);
+}
+
+a.list_projects{
+	background-image:url(images/icons/page_go.png);
+}
+
+a.new_client{
+	background-image:url(images/icons/vcard_add.png);
+}
+
+a.edit_client{
+	background-image:url(images/icons/vcard_edit.png);
+}
+
+a.delete_client{
+	background-image:url(images/icons/vcard_delete.png);
+}
+
+a.list_clients{
+	background-image:url(images/icons/vcard_go.png);
+}
+
+a.new_category{
+	background-image:url(images/icons/folder_add.png);
+}
+
+
+a.edit_category{
+	background-image:url(images/icons/folder_edit.png);
+}
+
+a.delete_category{
+	background-image:url(images/icons/folder_delete.png);
+}
+
+
+a.list_categories{
+	background-image:url(images/icons/folder_go.png);
+}
+
+a.new_image{
+	background-image:url(images/icons/image_add.png);
+}
+
+a.new_user{
+	background-image:url(images/icons/user_add.png);
+}
+
+
+a.edit_user{
+	background-image:url(images/icons/user_edit.png);
+}
+
+a.delete_user{
+	background-image:url(images/icons/user_delete.png);
+}
+
+
+a.list_users{
+	background-image:url(images/icons/user_go.png);
+}
+
+/*
+	TABLE
+*/
+
+table{
+	margin:12px;
+	width:97%;	
+	border-collapse:collapse;	
+}
+
+th,td
+{
+	vertical-align: top; 
+	text-align: left;
+	height:2em;
+	line-height:2em;
+	padding: 0 1em;
+	border:1px solid #e3e7ef;
+}
+
+th{
+	font-weight:normal;	
+	color:#777;
+	border-bottom:1px solid #c3c7cf;
+	background:#fdfdfd url(images/chrome_bg.gif) repeat-x top;	
+}
+
+
+th a{
+	display:block;
+	color:#235;
+	background: transparent url(images/sort-arrow-down.gif) no-repeat center right;
+}
+
+th a:hover{
+	color:#679;
+}
+
+td.image{
+	padding:12px;
+	width:90px;
+}
+
+tr.altrow{
+	background:#f3f7ff;
+}
+
+td.actions {
+	width:150px;
+}
+
+td.actions a{
+	text-align:center;
+	line-height:16px;
+	font-size:9px;
+	display:block;
+	float:left;
+	width:52px;
+	color:#014;
+	background:transparent url(images/inline_action_btn.png) no-repeat top left;
+	margin:3px;
+	padding:0;
+}
+
+td.actions a:hover{
+	color:#036;
+	background:transparent url(images/inline_action_btn.png) no-repeat bottom left;
+}
+
+/*
+	LISTS
+*/
+
+dl{
+	margin:12px;
+}
+
+dt{
+	text-align:right;
+	font-weight:bold;
+	padding:3px 6px;
+	color:#666;
+	float:left;
+	width:90px;
+}
+
+dd{
+	padding:3px 6px;
+	clear:right;
+}
+
+dd.altrow, dl.altrow{
+	background:#f3f7ff;
+}
+
+
+
+/*
+	FORMS
+*/
+
+form{
+	padding:6px;
+	margin:12px;
+}
+
+form div{
+	background:#f3f3f3;
+	padding:6px;
+	margin-bottom:6px;
+	border:1px solid #e3e7ef;
+}
+
+form div label{
+	display:block;
+}
+
+form div input, form div textarea{
+	border:1px solid #ccc;
+	border-top:1px solid #777;
+	border-left:1px solid #999;	
+}
+
+div.submit input{
+	color:#021018;
+	padding:3px 6px;
+	background:#d5903f url(images/button_bg.gif) repeat-x center;
+	border:1px solid #e0a85c;
+	border-right:1px solid #c76d23;
+	border-bottom:1px solid #c76d23;
+}
+
+
+
+/*
+	PROJECTS
+*/
+
+
+#projects .project{
+	padding:12px;
+	clear:both;
+	overflow:auto;
+}
+
+#projects .image{
+	display:block;
+	float:left;
+}
+
+#projects .project .info{
+	padding-left:12px;
+	float:left;
+}
+
+#projects .project .actions{
+	padding:0;
+	position:static;
+}
+
+#projects .project .actions a{
+	text-align:center;
+	line-height:16px;
+	font-size:9px;
+	display:block;
+	float:left;
+	width:52px;
+	color:#014;
+	background:transparent url(images/inline_action_btn.png) no-repeat top left;
+	margin:3px;
+	padding:0;
+}
+
+#projects .project .actions a:hover{
+	color:#036;
+	background:transparent url(images/inline_action_btn.png) no-repeat bottom left;
+}
+/*
+	IMAGES
+*/
+
+#images{
+	padding:12px;
+}
+
+#images .image{
+	position:relative;
+	float:left;
+	margin:6px;
+}
+
+div.image{
+	padding:0 6px 6px 0;
+	background:url(images/shadow_bg.gif) no-repeat bottom right;	
+}
+
+.image a.action{
+	text-indent:-5000px;
+	display:block;
+	position:absolute;
+	bottom:8px;
+	right:8px;
+	width:14px;
+	height:14px;
+	background:url(images/delete_btn.gif);
+}
+
+.image a.action:hover{
+	background-position:bottom;
+}
+
+.image a img{
+	margin:-6px 0 0 -6px;
+	padding:6px 6px 16px 6px;
+	background:#fff;
+}
+
+/*
+	THEMES
+*/
+
+#themes{
+	padding:15px;
+}
+
+.theme{
+	padding:15px;
+	width:300px;
+	float:left;
+	height:350px;
+}
+
+.theme .image img{
+	width:300px;
+	height:250px;
+}
+
+.theme h2{
+	text-align:center;
+	font-size:14px;
+}
+
+.theme.active{
+	background:#f3f7ff;
+}
+
+
+
+/*
+	RELATED
+*/
+
+.related{
+	padding:12px;
+}
+
+.related ul li{
+	font-size:14px;
+	list-style-type:none;
+}
+
+.related ul li{
+	padding:6px 12px;
+}
+
+.related h3{
+	font-size:14px;
+	color:#666;
+	border:1px solid #e3e7ef;	
+	border-bottom:1px solid #c3c7cf;
+	background:#fdfdfd url(images/chrome_bg.gif) repeat-x top;	
+	padding:6px;
+}
+
+/*
+	FORMS
+*/
+
+  /*Page Forms*/
+
+
+	
+	#CategoryName{
+		font-size:150%;
+		width:550px;
+	}
+	
+	#PageExcerpt,#CategoryDescription{
+		width:550px;
+		height:150px;
+	}
+
+	#PageBody{
+		width:550px;
+		height:300px;
+	}
+
+
+/*
+	MISC
+*/
+
+#flashMessage{
+	color:#600;
+	background:#ff6 url(images/icons/bell.png) no-repeat 12px center;
+	padding:6px 12px 6px 36px;
+}
+
+
+.page_title{
+	padding:0 12px;
+	line-height:30px;
+	height:30px;
+	font-weight:normal;
+	font-size:16px;
+	background:#345 url(images/dark-chrome.gif) repeat-x;
+	border-bottom:1px solid #0c2d39;
+	border-top:1px solid #d5903f;
+	color:#fff;
+	clear:both;
+}
+
+.paging{
+	margin:12px;
+	overflow:auto;
+}
+
+.paging div, .paging a.enabled{
+	display:block;
+	height:30px;
+	line-height:30px;
+	padding:0 12px;
+	background:#fdfdfd url(images/chrome_bg.gif) repeat-x top;
+	border:1px solid #e3e7ef;
+	float:left;
+}
+
+.paging .disabled{
+	color:#999;
+}
+
+
+
+.altrow{
+	background:#f3f7ff;
+}

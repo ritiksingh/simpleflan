@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	font: 76.5%/1.3em 'Lucida Grande', Verdana, sans-serif;
+	color: #000;
+	background: #092631;
+	text-align:center;
+}
+
+#container{
+	position:relative;
+	text-align:left;
+	width:450px;
+	height:300px;
+	margin:30px auto;
+	background:url(images/login.gif) no-repeat;
+}
+
+h2{
+	color:#021018;
+	position:absolute;
+	left:35px;
+	top:88px;
+}
+
+#user_password{
+	position:absolute;
+	top:135px;
+	left:35px;
+	width:380px;
+	border-bottom:1px solid #d5bf9f;
+}
+
+#user_password div.input{
+	font-size:16px;
+	position:relative;
+	height:40px;
+	
+}
+
+#user_password label{	
+	text-align:right;
+	display:block;
+	position:absolute;
+	width:80px;
+}
+
+#UserEmail,#UserPassword{
+	left:90px;
+	width:280px;
+	position:absolute;
+	border:1px solid #d5bf9f;
+	padding:3px;
+}
+
+#remember{
+	position:absolute;
+	left:35px;
+	bottom:60px;	
+}
+
+#remember input{
+	border:1px solid #d5bf9f;
+	padding:3px;
+	margin-right:3px;
+}
+
+div.submit{
+	position:absolute;
+	right:35px;
+	bottom:50px;
+}
+
+div.submit input{
+	color:#021018;
+	padding:3px 6px;
+	background:#d5903f url(images/button_bg.gif) repeat-x center;
+	border:1px solid #e0a85c;
+	border-right:1px solid #c76d23;
+	border-bottom:1px solid #c76d23;
+}
