@@ -23,7 +23,7 @@
 			<h4><?php echo $html->link($project['Project']['title'],array('action'=>'view',$project['Project']['slug'])); ?>
 			</h4>
 			<div class="description">
-				<?php echo $project['Project']['description'] ?>
+				<?php echo $textile->textileThis($project['Project']['description']); ?>
 			</div>
 		</div>
 	</div>
