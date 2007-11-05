@@ -38,7 +38,6 @@ foreach ($clients as $client):
 <div class="actions">
 	<ul>
 		<li><?php echo $html->link(__('New', true).' '.__('Client', true), array('action'=>'add'),array('class'=>'new_client')); ?></li>
-		<li><?php echo $html->link(__('List', true).' '.__('Projects', true), array('controller'=> 'projects', 'action'=>'index'),array('class'=>'list_project')); ?> </li>
 		<li><?php echo $html->link(__('New', true).' '.__('Project', true), array('controller'=> 'projects', 'action'=>'add'),array('class'=>'new_project')); ?> </li>
 	</ul>
 </div>

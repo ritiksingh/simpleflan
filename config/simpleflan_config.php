@@ -1,7 +1,7 @@
 <?php 
  $config['simpleflan']=array(
-		'theme'=>'vanilla',
+		'theme'=>'napolitan',
 		'title'=>'Enormiflan Design',
-		'feedback_email'=>'arm.sosa@gmail.com'
+		'feedback_email'=>'arm.sosa@gmail.com',
 	);
 ?>

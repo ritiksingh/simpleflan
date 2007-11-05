@@ -31,6 +31,7 @@ class ProjectsController extends AppController {
 
 	function admin_index() {
 		$this->Project->recursive = 1;
+		$this->paginate = array( 'order' => array('Project.modified' => 'desc'));
 		$this->set('projects', $this->paginate());
 	}
 

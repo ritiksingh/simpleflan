@@ -38,7 +38,7 @@
  */
 class AppController extends Controller {
 	
-	var $components=array('Auth');
+	var $components=array('Auth','RequestHandler');
 	
 	var $helpers=array('Imager','Textile','Javascript');
 	
