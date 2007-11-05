@@ -12,6 +12,11 @@ class ImagerHelper extends Helper
 		return $this->Html->image($url);
 	}
 	
+	function link($image,$url,$options=null,$linkOptions=null){
+		$linkOptions=Set::merge($linkOptions,array('escape'=>false));
+		return $this->Html->link($this->image($image,$options),$url,$linkOptions);
+	}
+	
 	function imageLink($image,$options=null,$linkOptions=null){
 		$options=$this->__setOptions($options);
 		if (!isset($options['sourceSize'])){
